@@ -77,7 +77,7 @@ export default function Home() {
 
         <section
           id="o-mne"
-          className="fade-up rounded-3xl bg-[#1F2937] px-6 py-8 md:px-10 md:py-11"
+          className="fade-up scroll-mt-32 rounded-3xl bg-[#1F2937] px-6 py-8 md:scroll-mt-28 md:px-10 md:py-11"
         >
           <h2 className="text-2xl font-semibold text-[#F5F5DC] md:text-3xl">
             Jak přemýšlím o práci
@@ -119,7 +119,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projekty" className="fade-up space-y-6">
+        <section id="projekty" className="fade-up scroll-mt-36 space-y-6 md:scroll-mt-28">
           <div className="flex items-end justify-between gap-4">
             <h2 className="text-2xl font-semibold md:text-3xl">Vybrané projekty</h2>
             <Link
@@ -153,7 +153,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="kontakt" className="fade-up glass-card rounded-3xl p-7 md:p-10">
+        <section
+          id="kontakt"
+          className="fade-up scroll-mt-32 glass-card rounded-3xl p-7 md:scroll-mt-28 md:p-10"
+        >
           <div className="grid gap-6 md:grid-cols-[1.4fr_1fr]">
             <div className="space-y-3">
               <h2 className="text-2xl font-semibold md:text-3xl">Kontakt</h2>

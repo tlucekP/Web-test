@@ -61,3 +61,9 @@
 - Duvod: Nahradit placeholder obrazek realnym profilem bez dalsiho zasahu do layoutu.
 - Overeni: npm run lint a npm run build.
 
+
+## 2026-02-25 22:00 (local)
+- Zmena: Opraven anchor scroll overlap se sticky top panelem pridanim scroll-mt offsetu pro sekce o-mne/projekty/kontakt v app/page.tsx.
+- Duvod: Nadpisy sekci byly po kliknuti v menu prekryte vrchnim panelem (desktop i mobil, u projektu hlavne mobil).
+- Overeni: npm run lint + npm run build.
+
