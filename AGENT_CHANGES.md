@@ -55,3 +55,9 @@
 - Duvod: Posilit osobni/profesionalni dojem bez zmeny barevne identity a bez zasahu do ostatnich sekci.
 - Overeni: npm run lint + npm run build; zapsano i do docs/redesign-log.md.
 
+
+## 2026-02-25 19:40 (local)
+- Zmena: Nahrana realna profilova fotografie uzivatele (public/profile-photo.jpeg) a propojena v Hero + Open Graph metadatech.
+- Duvod: Nahradit placeholder obrazek realnym profilem bez dalsiho zasahu do layoutu.
+- Overeni: npm run lint a npm run build.
+

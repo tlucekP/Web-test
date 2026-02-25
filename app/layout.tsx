@@ -33,7 +33,7 @@ export const metadata: Metadata = {
       "Směr určuje obchod. Technologie ho umožňují. Osobní portfolio Petera Tlučhoře.",
     images: [
       {
-        url: "/profile-photo.svg",
+        url: "/profile-photo.jpeg",
         width: 900,
         height: 720,
         alt: "Náhled portfolio webu",

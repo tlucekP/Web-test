@@ -61,7 +61,7 @@ export default function Home() {
           </div>
           <div className="fade-up relative overflow-hidden rounded-2xl border border-[#1F2937]/15 bg-[#e8e6cf] p-3 md:p-4">
             <Image
-              src="/profile-photo.svg"
+              src="/profile-photo.jpeg"
               alt="Portrét Petera Tlučhoře"
               width={900}
               height={720}

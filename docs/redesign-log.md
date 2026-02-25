@@ -18,3 +18,4 @@
 - Verifikace:
   - `npm run lint`
   - `npm run build`
+- Doplneni: Nasazena realna profilova fotografie public/profile-photo.jpeg (Hero + OG metadata).
