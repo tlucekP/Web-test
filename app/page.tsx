@@ -36,7 +36,7 @@ export default function Home() {
           className="fade-up grid gap-8 rounded-3xl border border-[#1F2937]/12 bg-[#F5F5DC] px-6 py-9 text-[#1F2937] md:grid-cols-[1.35fr_1fr] md:gap-10 md:px-10 md:py-12"
         >
           <div className="space-y-6">
-            <p className="text-2xl font-semibold leading-[1.15] tracking-[-0.01em] text-[#1F2937] md:text-3xl">
+            <p className="text-[1.65rem] font-semibold leading-[1.15] tracking-[-0.01em] text-[#1F2937] md:text-[2.05rem]">
               Peter Tlučhoř
             </p>
             <h1 className="max-w-2xl text-4xl font-semibold leading-[1.08] tracking-[-0.01em] text-[#1F2937] md:text-[3.5rem]">
