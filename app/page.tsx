@@ -16,8 +16,11 @@ export default function Home() {
     <div className="min-h-screen pb-16">
       <header className="shell sticky top-4 z-10 pt-4">
         <nav className="glass-card fade-up flex items-center justify-between rounded-full px-5 py-3 text-sm md:px-7">
-          <a className="font-semibold tracking-[0.08em]" href="#hero">
-            PETER TLUČHOŘ
+          <a
+            className="text-[0.82rem] font-semibold tracking-[0.06em] md:text-[0.86rem]"
+            href="#hero"
+          >
+            Peter Tlučhoř
           </a>
           <div className="flex items-center gap-4 text-[0.92rem] text-[var(--fg-muted)] md:gap-6">
             <a href="#o-mne">O mně</a>
@@ -33,7 +36,7 @@ export default function Home() {
           className="fade-up grid gap-8 rounded-3xl border border-[#1F2937]/12 bg-[#F5F5DC] px-6 py-9 text-[#1F2937] md:grid-cols-[1.35fr_1fr] md:gap-10 md:px-10 md:py-12"
         >
           <div className="space-y-6">
-            <p className="inline-flex rounded-full border border-[#1F2937]/20 px-3 py-1 text-xs uppercase tracking-[0.14em] text-[#1F2937]/70">
+            <p className="text-2xl font-semibold leading-[1.15] tracking-[-0.01em] text-[#1F2937] md:text-3xl">
               Peter Tlučhoř
             </p>
             <h1 className="max-w-2xl text-4xl font-semibold leading-[1.08] tracking-[-0.01em] text-[#1F2937] md:text-[3.5rem]">

@@ -67,3 +67,9 @@
 - Duvod: Nadpisy sekci byly po kliknuti v menu prekryte vrchnim panelem (desktop i mobil, u projektu hlavne mobil).
 - Overeni: npm run lint + npm run build.
 
+
+## 2026-02-25 22:20 (local)
+- Zmena: Uprava vizualni hierarchie jmena v Hero + jemne zjemneni brand labelu v headeru kvuli duplicite.
+- Duvod: Jmeno v Hero bylo prilis male a neziskavalo dostatecnou osobni brand viditelnost.
+- Overeni: npm run lint + npm run build.
+

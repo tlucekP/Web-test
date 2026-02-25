@@ -21,3 +21,5 @@
 - Doplneni: Nasazena realna profilova fotografie public/profile-photo.jpeg (Hero + OG metadata).
 
 - Fix anchor scrollu: pridan scroll-mt offset pro sekce #o-mne, #projekty a #kontakt, aby sticky top panel neprekryval nadpisy po kliknuti v navigaci (desktop + mobil).
+
+- Hero name hierarchy adjustment: zvetsena typografie jmena v Hero (silnejsi osobni branding), H1 ponechan jako hlavni message; header brand vizualne zjemnen pro snizeni pocitu duplicity.
