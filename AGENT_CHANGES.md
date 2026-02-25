@@ -25,3 +25,9 @@
 - Duvod: Poskytnout crawlerum jasna pravidla indexace a seznam indexovanych URL.
 - Overeni: Vygenerovani routes /robots.txt a /sitemap.xml pri buildu.
 
+
+## 2026-02-25 18:45 (local)
+- Zmena: Pridany security headers do next.config.ts (X-Content-Type-Options, X-Frame-Options, Referrer-Policy, Permissions-Policy).
+- Duvod: Zakladni hardening produkcniho webu proti beznym webovym rizikum.
+- Overeni: Kontrola konfigurace + nasledne npm run lint a npm run build.
+
