@@ -23,7 +23,7 @@ export default function Home() {
             Peter Tlučhoř
           </a>
           <div className="flex items-center gap-4 text-[0.92rem] text-[var(--fg-muted)] md:gap-6">
-            <a href="#o-mne">O mně</a>
+            <Link href="/o-mne">O mně</Link>
             <a href="#projekty">Projekty</a>
             <a href="#kontakt">Kontakt</a>
           </div>
@@ -76,6 +76,35 @@ export default function Home() {
               aria-hidden="true"
             />
           </div>
+        </section>
+
+        <section className="fade-up px-1 text-center">
+          <p className="mx-auto max-w-3xl text-lg leading-relaxed text-[#F5F5DC] md:text-[1.32rem] md:leading-9">
+            <span
+              className="text-[#F97316]"
+              style={{ fontSize: "calc(1em + 1px)" }}
+            >
+              Obchod
+            </span>{" "}
+            je pro mě o lidech i výsledcích.
+            <br />
+            <span
+              className="text-[#F97316]"
+              style={{ fontSize: "calc(1em + 1px)" }}
+            >
+              Technologie
+            </span>{" "}
+            používám tam, kde pomáhají věci zjednodušit a posunout dál.
+            <br />
+            Zajímá mě, co skutečně{" "}
+            <span
+              className="text-[#F5F5DC]"
+              style={{ fontSize: "calc(1em + 1px)" }}
+            >
+              funguje
+            </span>{" "}
+            v praxi.
+          </p>
         </section>
 
         <section

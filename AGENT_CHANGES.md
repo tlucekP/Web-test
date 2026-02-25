@@ -73,3 +73,9 @@
 - Duvod: Jmeno v Hero bylo prilis male a neziskavalo dostatecnou osobni brand viditelnost.
 - Overeni: npm run lint + npm run build.
 
+
+## 2026-02-25 22:40 (local)
+- Zmena: Polozka O mne ve sticky menu ted otevira samostatnou stranku /o-mne; mezi Hero a sekci Jak premyslim o praci pridan vycentrovany kratky text v sand barve.
+- Duvod: Oddeleni detailniho profilu na samostatnou stranku a doplneni osobniho prechodu na homepage bez boxu.
+- Overeni: npm run lint + npm run build.
+
