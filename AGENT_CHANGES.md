@@ -49,3 +49,9 @@
 - Duvod: Priorita pouze pro LinkedIn/Open Graph sdileni.
 - Overeni: Kontrola metadat + nasledne npm run lint a npm run build.
 
+
+## 2026-02-25 19:30 (local)
+- Zmena: Upraven Hero blok a prvni sekce pod Hero na homepage dle noveho zadani (layout 2 sloupce, nove CTA, kontrast text/fotka, sekce Jak premyslim o praci se 3 kartami).
+- Duvod: Posilit osobni/profesionalni dojem bez zmeny barevne identity a bez zasahu do ostatnich sekci.
+- Overeni: npm run lint + npm run build; zapsano i do docs/redesign-log.md.
+
