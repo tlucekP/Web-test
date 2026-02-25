@@ -30,51 +30,93 @@ export default function Home() {
       <main className="shell mt-12 space-y-16 md:mt-16 md:space-y-24">
         <section
           id="hero"
-          className="glass-card fade-up grid gap-8 rounded-3xl px-6 py-9 md:grid-cols-[1.3fr_1fr] md:px-10 md:py-12"
+          className="fade-up grid gap-8 rounded-3xl border border-[#1F2937]/12 bg-[#F5F5DC] px-6 py-9 text-[#1F2937] md:grid-cols-[1.35fr_1fr] md:gap-10 md:px-10 md:py-12"
         >
           <div className="space-y-6">
-            <p className="inline-flex rounded-full border border-[var(--border-soft)] px-3 py-1 text-xs uppercase tracking-[0.14em] text-[var(--fg-muted)]">
+            <p className="inline-flex rounded-full border border-[#1F2937]/20 px-3 py-1 text-xs uppercase tracking-[0.14em] text-[#1F2937]/70">
               Peter Tlučhoř
             </p>
-            <h1 className="max-w-xl text-3xl font-semibold leading-tight md:text-5xl">
+            <h1 className="max-w-2xl text-4xl font-semibold leading-[1.08] tracking-[-0.01em] text-[#1F2937] md:text-[3.5rem]">
               Směr určuje obchod. Technologie ho umožňují.
             </h1>
-            <p className="max-w-xl text-base leading-relaxed text-[var(--fg-muted)] md:text-lg">
-              Bez jasného směru jsou technologie jen zajímavá hračka. Smysl
-              mají tehdy, když podporují růst a fungují v praxi.
+            <p className="max-w-xl text-base leading-relaxed text-[#1F2937]/80 md:text-lg md:leading-8">
+              Bez jasného směru jsou technologie jen zajímavá hračka.
+              <br className="hidden md:block" />
+              Smysl mají tehdy, když podporují růst a fungují v praxi.
             </p>
             <div className="flex flex-wrap gap-3">
               <a
+                href="#kontakt"
+                className="inline-flex items-center justify-center rounded-full bg-[#F97316] px-6 py-3 font-medium text-white transition hover:bg-[#de630d] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1F2937] focus-visible:ring-offset-2 focus-visible:ring-offset-[#F5F5DC] md:px-7"
+              >
+                Probrat spolupráci
+              </a>
+              <a
                 href="#projekty"
-                className="rounded-full bg-[var(--accent)] px-5 py-2.5 font-medium text-[#111827] transition hover:brightness-110"
+                className="inline-flex items-center justify-center rounded-full border border-[#1F2937]/25 px-6 py-3 font-medium text-[#1F2937]/85 transition hover:bg-[#1F2937]/6 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1F2937] focus-visible:ring-offset-2 focus-visible:ring-offset-[#F5F5DC]"
               >
                 Moje projekty
               </a>
-              <a
-                href="#kontakt"
-                className="rounded-full border border-[var(--border-soft)] px-5 py-2.5 font-medium transition hover:bg-[var(--accent-soft)]"
-              >
-                Kontaktujte mě
-              </a>
             </div>
           </div>
-          <div className="fade-up rounded-2xl border border-[var(--border-soft)] bg-[rgba(245,245,220,0.05)] p-4">
+          <div className="fade-up relative overflow-hidden rounded-2xl border border-[#1F2937]/15 bg-[#e8e6cf] p-3 md:p-4">
             <Image
               src="/profile-photo.svg"
-              alt="Profilová fotografie autora"
+              alt="Portrét Petera Tlučhoře"
               width={900}
               height={720}
-              className="h-full min-h-60 w-full rounded-xl object-cover"
+              className="h-full min-h-72 w-full rounded-xl object-cover saturate-75 contrast-90"
+              priority
+            />
+            <div
+              className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-t from-[#1F2937]/12 to-transparent"
+              aria-hidden="true"
             />
           </div>
         </section>
 
-        <section id="o-mne" className="fade-up space-y-5">
-          <h2 className="text-2xl font-semibold md:text-3xl">O mně</h2>
-          <p className="max-w-3xl leading-relaxed text-[var(--fg-muted)]">
-            Sekce O mně bude doplněna později. Základní profil: technologický
-            nadšenec a obchodník se zaměřením na praktický dopad technologií.
-          </p>
+        <section
+          id="o-mne"
+          className="fade-up rounded-3xl bg-[#1F2937] px-6 py-8 md:px-10 md:py-11"
+        >
+          <h2 className="text-2xl font-semibold text-[#F5F5DC] md:text-3xl">
+            Jak přemýšlím o práci
+          </h2>
+          <div className="mt-6 grid gap-4 md:grid-cols-3">
+            {[
+              {
+                title: "Obchodní logika",
+                description:
+                  "Každé rozhodnutí musí dávat ekonomický smysl.",
+              },
+              {
+                title: "Praktické využití technologií",
+                description:
+                  "Technologie mají podporovat proces, ne ho komplikovat.",
+              },
+              {
+                title: "Dlouhodobá udržitelnost",
+                description:
+                  "Růst musí být opakovatelný a říditelný.",
+              },
+            ].map((item) => (
+              <article
+                key={item.title}
+                className="rounded-2xl border border-[#F5F5DC]/18 bg-[#F5F5DC]/4 p-5"
+              >
+                <span
+                  className="mb-3 block h-1.5 w-9 rounded-full bg-[#F97316]"
+                  aria-hidden="true"
+                />
+                <h3 className="text-lg font-medium text-[#F5F5DC]">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-[#F5F5DC]/82">
+                  {item.description}
+                </p>
+              </article>
+            ))}
+          </div>
         </section>
 
         <section id="projekty" className="fade-up space-y-6">
