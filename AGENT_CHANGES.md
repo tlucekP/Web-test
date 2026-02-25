@@ -31,3 +31,21 @@
 - Duvod: Zakladni hardening produkcniho webu proti beznym webovym rizikum.
 - Overeni: Kontrola konfigurace + nasledne npm run lint a npm run build.
 
+
+## 2026-02-25 19:05 (local)
+- Zmena: Aktualizovana identita webu (Peter Tluchor), hero obsah, kontaktni udaje a hlavni SEO texty v app/page.tsx a app/layout.tsx.
+- Duvod: Nasazeni prvnich realnych udaju podle zadani uzivatele, ponechani sekci O mne/Projekty pripravenych pro pozdejsi doplneni.
+- Overeni: Kontrola obsahu v kodu + nasledne npm run lint a npm run build.
+
+
+## 2026-02-25 19:12 (local)
+- Zmena: Opravene kodovani souboru app/layout.tsx a app/page.tsx na validni UTF-8 po doplneni diakritiky.
+- Duvod: Build selhal na invalid UTF-8 sekvence; bylo nutne sjednotit kodovani souboru.
+- Overeni: npm run lint a npm run build uspesne.
+
+
+## 2026-02-25 19:18 (local)
+- Zmena: Odstranena Twitter metadata z app/layout.tsx na zaklade pozadavku uzivatele.
+- Duvod: Priorita pouze pro LinkedIn/Open Graph sdileni.
+- Overeni: Kontrola metadat + nasledne npm run lint a npm run build.
+

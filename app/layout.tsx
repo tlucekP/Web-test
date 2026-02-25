@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -15,11 +15,11 @@ const siteUrl =
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Tve jmeno | Web developer",
-    template: "%s | Tve jmeno",
+    default: "Peter Tlučhoř | Technologický nadšenec a obchodník",
+    template: "%s | Peter Tlučhoř",
   },
   description:
-    "Moderni osobni portfolio s ukazkami projektu, profilem a kontaktem.",
+    "Směr určuje obchod. Technologie ho umožňují. Osobní portfolio Petera Tlučhoře.",
   alternates: {
     canonical: "/",
   },
@@ -27,25 +27,18 @@ export const metadata: Metadata = {
     type: "website",
     locale: "cs_CZ",
     url: "/",
-    siteName: "Tve jmeno - portfolio",
-    title: "Tve jmeno | Web developer",
+    siteName: "Peter Tlučhoř - portfolio",
+    title: "Peter Tlučhoř | Technologický nadšenec a obchodník",
     description:
-      "Moderni osobni portfolio s ukazkami projektu, profilem a kontaktem.",
+      "Směr určuje obchod. Technologie ho umožňují. Osobní portfolio Petera Tlučhoře.",
     images: [
       {
         url: "/profile-photo.svg",
         width: 900,
         height: 720,
-        alt: "Nahled portfolio webu",
+        alt: "Náhled portfolio webu",
       },
     ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Tve jmeno | Web developer",
-    description:
-      "Moderni osobni portfolio s ukazkami projektu, profilem a kontaktem.",
-    images: ["/profile-photo.svg"],
   },
 };
 
