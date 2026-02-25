@@ -14,3 +14,14 @@
 - Změna: Do `app/layout.tsx` byly přidány komponenty `<Analytics />` a `<SpeedInsights />` včetně importů.
 - Důvod: Aktivace sběru Vercel Analytics a Vercel Speed Insights přímo v aplikaci.
 - Ověření: Kontrola kódu v layoutu + následné spuštění `npm run lint` a `npm run build`.
+
+## 2026-02-25 18:30 (local)
+- Zmena: Rozsirena SEO metadata v app/layout.tsx (metadataBase, title template, canonical, Open Graph, Twitter card) a doplnena page-level metadata pro /, /o-mne, /projekty.
+- Duvod: Lepsi indexace a konzistentni nahledy pri sdileni na LinkedIn/Twitter.
+- Overeni: Kontrola metadat v kodu + lint/build.
+
+## 2026-02-25 18:30 (local)
+- Zmena: Pridany soubory app/robots.ts a app/sitemap.ts.
+- Duvod: Poskytnout crawlerum jasna pravidla indexace a seznam indexovanych URL.
+- Overeni: Vygenerovani routes /robots.txt a /sitemap.xml pri buildu.
+

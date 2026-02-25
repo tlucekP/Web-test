@@ -1,5 +1,15 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Projekty",
+  description:
+    "Vybrane ukazky projektu se zamerenim na vykon, UX a cistou implementaci.",
+  alternates: {
+    canonical: "/projekty",
+  },
+};
 
 const projects = [
   {

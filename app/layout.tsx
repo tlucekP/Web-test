@@ -9,9 +9,44 @@ const spaceGrotesk = Space_Grotesk({
   subsets: ["latin", "latin-ext"],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://web-test-two-lovat.vercel.app";
+
 export const metadata: Metadata = {
-  title: "Osobní portfolio",
-  description: "Prezentační web s ukázkou projektů a kontaktem.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Tve jmeno | Web developer",
+    template: "%s | Tve jmeno",
+  },
+  description:
+    "Moderni osobni portfolio s ukazkami projektu, profilem a kontaktem.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "cs_CZ",
+    url: "/",
+    siteName: "Tve jmeno - portfolio",
+    title: "Tve jmeno | Web developer",
+    description:
+      "Moderni osobni portfolio s ukazkami projektu, profilem a kontaktem.",
+    images: [
+      {
+        url: "/profile-photo.svg",
+        width: 900,
+        height: 720,
+        alt: "Nahled portfolio webu",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tve jmeno | Web developer",
+    description:
+      "Moderni osobni portfolio s ukazkami projektu, profilem a kontaktem.",
+    images: ["/profile-photo.svg"],
+  },
 };
 
 export default function RootLayout({
