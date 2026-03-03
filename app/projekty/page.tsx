@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Projekty",
   description:
-    "Vybrane ukazky projektu se zamerenim na vykon, UX a cistou implementaci.",
+    "Vybrané ukázky projektů se zaměřením na výkon, UX a čistou implementaci.",
   alternates: {
     canonical: "/projekty",
   },
@@ -15,17 +15,17 @@ const projects = [
   {
     name: "Aplikace A",
     description:
-      "Firemni web s durazem na rychlost nacitani, prehlednost obsahu a mobilni UX.",
+      "Firemní web s důrazem na rychlost načítání, přehlednost obsahu a mobilní UX.",
   },
   {
     name: "Aplikace B",
     description:
-      "Interni nastroj, ktery zjednodusuje opakujici se agendu a reportovani.",
+      "Interní nástroj, který zjednodušuje opakující se agendu a reportování.",
   },
   {
     name: "Aplikace C",
     description:
-      "Produktovy MVP prototyp od navrhu struktury po realizaci frontend vrstvy.",
+      "Produktový MVP prototyp od návrhu struktury po realizaci frontend vrstvy.",
   },
 ];
 
@@ -37,7 +37,7 @@ export default function ProjectsPage() {
           Projekty
         </p>
         <h1 className="text-3xl font-semibold leading-tight md:text-5xl">
-          Ukazka prace a realizovanych reseni
+          Ukázka práce a realizovaných řešení
         </h1>
       </section>
 
@@ -46,7 +46,7 @@ export default function ProjectsPage() {
           <article key={project.name} className="glass-card fade-up rounded-2xl p-4">
             <Image
               src={`/project-${index + 1}.svg`}
-              alt={`Nahled projektu ${project.name}`}
+              alt={`Náhled projektu ${project.name}`}
               width={800}
               height={520}
               className="mb-4 h-44 w-full rounded-xl object-cover"
@@ -64,7 +64,7 @@ export default function ProjectsPage() {
           href="/"
           className="rounded-full border border-[var(--border-soft)] px-5 py-2.5 text-sm transition hover:bg-[var(--accent-soft)]"
         >
-          Zpet na hlavni stranku
+          Zpět na hlavní stránku
         </Link>
       </div>
     </main>

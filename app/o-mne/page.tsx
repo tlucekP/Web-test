@@ -47,13 +47,13 @@ export default function AboutPage() {
             href="/#kontakt"
             className="rounded-full bg-[var(--accent)] px-5 py-2.5 font-medium text-[#111827] transition hover:brightness-110"
           >
-            Napsat zpravu
+            Napsat zprávu
           </Link>
           <Link
             href="/"
             className="text-[#F5F5DC] underline-offset-4 transition hover:underline"
           >
-            Zpet na uvod
+            Zpět na úvod
           </Link>
         </div>
       </section>
