@@ -56,3 +56,9 @@ Tento soubor je závazný pracovní postup pro tento projekt. Při dalších úp
 - Menší, čitelné commity.
 - Commit message stručně a věcně popsat změnu.
 - Před push vždy proběhne lint a build (pokud to typ změny dává smysl).
+
+## 9. Static export pravidlo
+- Vsechny nove zmeny a features navrhovat tak, aby byly kompatibilni se statickym exportem Next.js (`output: "export"`).
+- Pocitat s tim, ze produkcni nasazeni probiha uploadem obsahu slozky `out/` na FTP hosting.
+- Export/build pro nasazeni (`npm run build`) NESPoustet automaticky po upravach.
+- Export/build spoustet pouze po explicitnim prikazu uzivatele.
